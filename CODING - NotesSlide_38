@@ -1,0 +1,39 @@
+package selfcoding;
+
+import java.util.Scanner;
+
+public class NotesSlide_38 {
+
+	public static void main(String[] args) {
+		
+		readAge();
+		readAge(50);
+	}
+	
+	public static int readAge() {
+		
+		Scanner sc = new Scanner(System.in);
+		int age=0;
+		do {
+			System.out.print("Please enter your age (1-100) : ");
+			age = sc.nextInt();
+		}
+		while ((age<1) || (age>100));  //valid age check
+		System.out.println("\nYou are " +age+ " years old.");
+		return age;  //return the number to main
+	}
+	
+	public static int readAge(int max) {
+		System.out.println("\n***************************************");
+		Scanner sc = new Scanner(System.in);
+		int age=0;
+		do {
+			System.out.print("Please enter your age (1-" +max+ ") : ");
+			age = sc.nextInt();
+		}
+		while ((age<1) || (age>max));  //valid age check
+		System.out.println("\nYou are " +age+ " years old.");
+		return age;  //return the number to main
+	}
+
+}
