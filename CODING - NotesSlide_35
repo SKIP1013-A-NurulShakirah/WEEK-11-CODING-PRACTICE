@@ -1,0 +1,32 @@
+package selfcoding;
+
+import java.util.Scanner;
+
+public class NotesSlide_35 {
+
+	public static void main(String[] args) {
+		
+		int age = readAge();
+		if (age<=9) {
+			System.out.println("(Children Category)");
+		}
+		else if (age<=19) {
+			System.out.println("(Adolscent Category)");
+		}
+		else {
+			System.out.println("(Adult Category)");
+		}
+	}
+	
+	public static int readAge() {
+		Scanner sc = new Scanner(System.in);
+		int age=0;
+		do {
+			System.out.print("Please enter your age (1-100) : ");
+			age = sc.nextInt();
+		}while ((age<1) || (age>100));  //valid age check
+		System.out.println("\nYou are " +age+ " years old.");
+		return age;  //return the number to main
+	}
+
+}
