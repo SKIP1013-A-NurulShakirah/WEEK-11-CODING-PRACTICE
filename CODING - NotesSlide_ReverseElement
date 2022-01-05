@@ -1,0 +1,28 @@
+package selfcoding;
+
+import java.util.Scanner;
+
+public class NotesSlide_ReverseElements {
+
+	public static void main(String[] args) {
+		
+		int item[] = new int[10];
+		int i;
+		
+		//Read integers number and store them in item[i]
+		System.out.println("Enter ten integers number : ");
+		Scanner sc = new Scanner(System.in);
+		for (i=0; i<item.length; i++) {
+			item[i] = sc.nextInt();
+		}
+		reverseOrder(item);
+	}
+	
+	public static void reverseOrder(int[] item) {
+		
+		//Print the output in reverse order
+		System.out.println("\nThe numbers in reverse order are:");
+		for (int i= item.length -1; i>=0; i--)
+			System.out.println(item[i]);
+	}
+}
