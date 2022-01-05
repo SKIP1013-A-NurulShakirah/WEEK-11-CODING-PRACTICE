@@ -1,0 +1,17 @@
+package selfcoding;
+
+public class NotesSlide_11 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("I have a message for you.");
+		showMessage();
+		System.out.println("Thats all folks!");
+	}
+	
+	public static void showMessage() {
+		
+		System.out.println("Hello world!");
+	}
+
+}
