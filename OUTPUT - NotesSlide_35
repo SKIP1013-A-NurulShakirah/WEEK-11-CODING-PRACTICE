@@ -1,0 +1,30 @@
+---< OUTPUT 1 >---
+
+Please enter your age (1-100) : 38
+
+You are 38 years old.
+(Adult Category)
+
+
+
+
+
+
+---< OUTPUT 2 >---
+
+Please enter your age (1-100) : 5
+
+You are 5 years old.
+(Children Category)
+
+
+
+
+
+
+---< OUTPUT 3 >---
+
+Please enter your age (1-100) : 15
+
+You are 15 years old.
+(Adolscent Category)
