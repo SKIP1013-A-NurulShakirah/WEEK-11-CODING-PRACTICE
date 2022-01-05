@@ -1,0 +1,40 @@
+package selfcoding;
+
+public class NotesSlide_SumAndLargestElement {
+
+	public static void main(String[] args) {
+		
+		int listA = 0;
+		int maxIndex;
+		
+		//call sumArray method and return a value to total
+		int total = sumArray(listA);
+		System.out.println("The sum of List A : " +total);
+		
+		//call indexLargestElement and return the index value to largest element in the array
+		int indLargest = indexLargestElement(listA);
+		System.out.println("\nThe index with largest element of List A : " +indLargest);
+	}
+	
+	public static int sumArray(int listA) {
+		
+		int[] list1 = {11, 22, 36, 42, 15, 46, 27, 48, 19, 10};
+		int sum=0;
+		for (int i=0; i<list1.length; i++) {
+			sum += list1[i];
+		}
+		return sum;
+	}
+	
+    public static int indexLargestElement(int list) {
+		
+    	int[] list2 = {11, 22, 36, 42, 15, 46, 27, 48, 19, 10};
+		int maxIndex=0;
+		for (int i=0; i<list2.length; i++) {
+			if (list2[maxIndex] < list2[i]) {
+				maxIndex = i;
+			}
+		}
+		return maxIndex;
+    }
+}
