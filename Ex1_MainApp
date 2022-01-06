@@ -1,0 +1,26 @@
+package selfcoding;
+
+import java.util.Scanner;
+
+public class Ex1_MainApp {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Ex1_MainApp obj = new Ex1_MainApp();
+		int num1, num2;
+		
+		System.out.println("Enter two numbers : ");
+		num1 = sc.nextInt();
+		num2 = sc.nextInt();
+		
+		System.out.print("The largest number : " +obj.findMax(num1, num2));
+	}
+	int findMax(int a, int b) {
+		if (a > b)
+			return a;
+		else
+			return b;
+	}
+
+}
