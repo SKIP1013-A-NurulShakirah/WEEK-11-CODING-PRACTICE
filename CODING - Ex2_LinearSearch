@@ -1,0 +1,29 @@
+package selfcoding;
+
+public class Ex2_LinearSearch {
+
+	public static void main(String[] args) {
+		
+		int i = linearSearch(new int[]{89, 57, 91, 47, 95, 3, 27, 22, 67, 99}, 67);
+		print(67, i);
+	}
+	
+	public static int linearSearch(int item[], int elementToSearch) {
+
+	    for (int i=0; i<item.length; i++) {
+	        if (item[i] == elementToSearch)
+	            return i;
+	    }
+	    return -1;
+	}
+	
+	public static void print(int elementToSearch, int i) {
+	    if (i == -1){
+	        System.out.println(elementToSearch + " not found.");
+	    }
+	    else {
+	        System.out.println(elementToSearch + " found at index : " +i);
+	    }
+	}
+
+}
